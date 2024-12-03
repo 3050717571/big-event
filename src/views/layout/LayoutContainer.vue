@@ -80,6 +80,7 @@ const onCommand = async(key) =>{
     </el-aside>
     <el-container>
       <el-header>
+        <div>大事件开发者：<strong>着澈</strong></div>
         <el-dropdown placement="bottom-end" @command="onCommand">
           <span class="el-dropdown__box">
             <el-avatar :src="userStore.user.user_pic || avatar" />
