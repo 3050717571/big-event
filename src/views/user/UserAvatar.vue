@@ -22,13 +22,10 @@ const onUploadFile = (file) => {
 const onUpdateAvatar  = async () =>{
     await userUploadAvatarService(imgUrl.value)
     await userStore.getUser()
-    console.log('1')
     ElMessage({
     message: '上传成功',
     type: 'success',
   })
-      console.log('2')
-
 }
 </script>
 
